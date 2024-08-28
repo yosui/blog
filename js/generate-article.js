@@ -50,8 +50,8 @@ fs.readdir(postsDir, (err, files) => {
 <body>
     <header>
         <div class="container">
-            <h1>${file.replace('.md', '')}</h1>
-            <p>Published on ${date}</p>
+            <h1><a href="../index.html"><font color="#FFFFFF">Yosui Blog</font></a></h1>
+            <p><font color="#FFFFFF">Published on ${date}</font></p>
         </div>
     </header>
     <main class="container">
