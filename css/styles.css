@@ -1,0 +1,144 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+/* Paragraph and anchor styles */
+p {
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container for main content areas */
+.container {
+    max-width: 1200px;  /* Increased max-width for larger screens */
+    margin: 0 auto;
+    padding: 0 20px;  /* Added padding for spacing within the container */
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    padding: 20px 0;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #007bff;
+}
+
+/* Main content styles */
+main {
+    padding-top: 20px;
+    margin: 20px 0;
+}
+
+main .container {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Navigation styles */
+nav a {
+    margin: 0 15px;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+/* Button styles */
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Article styles */
+article {
+    margin-bottom: 2rem;
+}
+
+article h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+
+article p {
+    margin-bottom: 1rem;
+}
+
+/* Responsive images */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
