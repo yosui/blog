@@ -50,7 +50,7 @@ fs.readdir(postsDir, (err, files) => {
 <body>
     <header>
         <div class="container">
-            <h1><a href="../index.html"><font color="#FFFFFF">Yosui Blog</font></a></h1>
+            <h1><a href="../"><font color="#FFFFFF">Yosui Blog</font></a></h1>
             <p><font color="#FFFFFF">Published on ${date}</font></p>
         </div>
     </header>
