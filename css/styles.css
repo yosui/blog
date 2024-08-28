@@ -136,7 +136,7 @@ article p {
 }
 
 /* Responsive images */
-.responsive-img {
+img {
     max-width: 100%;
     height: auto;
     display: block;
