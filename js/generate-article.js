@@ -46,6 +46,20 @@ fs.readdir(postsDir, (err, files) => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${file.replace('.md', '')}</title>
     <link rel="stylesheet" href="../css/styles.css">
+    
+    <meta property="og:title" content="Yosui Blog">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yosui.eth.limo/">
+    <meta property="og:image" content="./images/blog.png">
+    <meta property="og:description" content="blog by Yosui">
+    <meta property="og:site_name" content="Yosui Blog">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Yosui Blog">
+    <meta name="twitter:description" content="Yosui Blog">
+    <meta name="twitter:image" content="./images/blog.png">
+    <meta name="twitter:url" content="https://yosui.eth.limo/">
 </head>
 <body>
     <header>
