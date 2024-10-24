@@ -10,31 +10,49 @@ I described an idea for cross-chain intent which is Binary Option Pool(link) to 
 
 ## Overview
 
-Fractal Liquidity Pool is consists of some categories. The most simple case is Single Pool that is able to express linear curve liqudity. Single pool is defined by Token category and Transferable Accounts. This pool type works for One-side liquidity which is suitable for swapping wrapped token or stablecoin. 
+Fractal Liquidity Pool is consists of 2 sets, Token set and Token pair set. Liquidity provider can design liquidity pool with TA using this definition. The most simple case is one Token pair set that is able to express linear curve liqudity. This pool type works for One-side liquidity which is suitable for swapping wrapped token or stablecoin. 
 
 ![single=pool.png](/home/yosui262/Downloads/single=pool.png)
 
-Fractal Liquidity Pool can express any type of curves with modifying just 3 definitions and 1 condition. If Liquidity Provider define Double Pool which has two Single Pool, it works as cross-chain AMM type pool. Likewise, in case of Liquidity Provider create more large pool, this pool will be able to define 3 or more tokens pool with one same approach.
+Fractal Liquidity Pool can design any type of curves with modifying just 3 definitions and 2 conditions. If Liquidity Provider define two token pair set Pool, it works as cross-chain AMM type pool. Likewise, in case of Liquidity Provider create more large pool, this pool will be able to define 3 or more tokens pool with one same approach.
 
 ![double-pool.png](/home/yosui262/Downloads/double-pool.png)
 
 ## Pool Definition and Condition
+Fractal Liquidity Pool is defined by Token set, Token Pair set and relation between them. 
 
-Liquidity Provider define 3 definition and  1 condition per pool. 
+Token set has 3 informations
+1. Token(ex. a, b, c)
+2. Amount(ex. 0.05a token, 10b token)
+3. Contract(ex. 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, EQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM9c)
+4. Chain(ex. Bitcoin, Ethereum)
 
-### Definition
+Token Pair set has 2 informations
+1. Price curve(ex. k=a+b, k=ab)
+2. Distribution curve(ex. y=logax)
 
-Token
+Price curve: 
+    x: amount of a token
+    y: amount of b token
+Distibution curve:
+    x: amount of token
+    y: amount of transferable account
 
-Pool Type
+Liquidity Provider define 3 definition and  2 condition per pool. 
 
-Fee
+## Relationship to Transferable Account
+Liquidity in Fractal liquidity pool is set of Transferable Account. Amount of Transferable Account and token amount in each of Transferable Account are defined by Price curve and Distribution curve because enable them to enhance Solvers and Liquidity Providers opportuinity.
 
-### Condition
+## Usability
+Fractal liquidity pool provide more opportunity for solver and liquidity provider. Solver can access assets in Fractal Liquidity Pool to solve swapper's intent without stock. 
 
-Distribution Curve
+If demand of bridging between token a on chain x and token a on chain y increase immidiatly, solver notice it and create pool to collect liquidity. And Liquidity Provider found the pool which is high APY due to temporaly high demand and provide liquidity for it. Solver can access more opportunity of solving cross-chain intent with assets in Fractal Liquidity Pool and Liquidity Providers can get more active strategy as maker in decentralized ecosystem. Swapper swap their assets with the usual way.
 
 ## Example
+
+
+
+
 
 ## Consideration
 

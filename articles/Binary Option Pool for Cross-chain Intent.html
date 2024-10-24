@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Binary Option Pool for Cross-chain Intent</title>
+    <title>Binary Option Pool for Cross-chain Intent</title>
     <link rel="stylesheet" href="../css/styles.css">
-
+    
     <meta property="og:title" content="Yosui Blog">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yosui.eth.limo/">
@@ -24,8 +24,8 @@
 <body>
     <header>
         <div class="container">
-            <h1><a href="../index.html">Yosui Blog</a></h1>
-            <p>Published on 2024-08-28</p>
+            <h1><a href="../"><font color="#FFFFFF">Yosui Blog</font></a></h1>
+            <p><font color="#FFFFFF">Published on 2024-09-06</font></p>
         </div>
     </header>
     <main class="container">
@@ -40,14 +40,14 @@
 <p>Second, Solvers use tokens from the Binary Options Pool instantly to fulfill user intents when they don&#39;t have the necessary stock. This market enables the solving of user intents even for solvers without stock, allows liquidity providers to receive APY from exotic options, and facilitates easier swaps between different consensus algorithm chains.</p>
 <h2>Transferable Account for Liquidity</h2>
 <p>Before describing the Binary Options Market, it’s essential to understand the features and constraints of a Transferable Account. The Transferable Account is a core concept of Mycel. It is a specialized account structure designed to facilitate secure cross-chain asset management and transfer. It uses a 2-of-2 multi-signature mechanism, ensuring that both the user and validators collectively control the account. This design enhances security and decentralization, as no single party can unilaterally control the account or its assets.</p>
-<p><img src="https://hackmd.io/_uploads/HkdUwakj0.png" alt="image" class="responsive-img"></p>
+<p><img src="https://hackmd.io/_uploads/HkdUwakj0.png" alt="image"></p>
 <p>A Transferable Account can hold multiple assets by defining multiple account groups. For example, there could be two Transferable Accounts: one on the Optimism chain and another on the Bitcoin chain. These accounts can be paired as a cross-chain liquidity pool using an AMM curve defined by the Option Manager.</p>
 <p>$K = X \text{ tokens in BTC account} \times Y \text{ tokens in Optimism account}$</p>
 <p>Alternatively, a single Transferable Account can be used to manage multiple EVM chains, such as USDC on Optimism and USDC on Arbitrum.</p>
 <p>$K = X \text{ tokens on Optimism} \times Y \text{ tokens on Arbitrum}$</p>
 <h2>Binary Options Market</h2>
 <p>This chapter describes the Binary Options Market and its components. The Binary Options Market is a decentralized options market using Transferable Accounts. A Binary Option consists of one or more Transferable Accounts holding assets like BTC on Bitcoin and USDC on Optimism, designed by an Option Designer. The Liquidity Provider’s role is to provide liquidity with a single token. The Option Designer defines conditions for using the pool, such as “Solvers can use this liquidity pool if a user sends an intent to swap USDC on Optimism for BTC on Bitcoin.”</p>
-<p><img src="https://hackmd.io/_uploads/HyZYu6koC.png" alt="image" class="responsive-img"></p>
+<p><img src="https://hackmd.io/_uploads/HyZYu6koC.png" alt="image"></p>
 <p>This approach improves the experience for solvers and swappers by enabling the solving of user intents without requiring stock, especially in cross-chain scenarios.</p>
 <h3>Binary Options Pool</h3>
 <p>The Binary Options Pool is a liquidity pool designed by an Option Designer. The Binary Options Pool can consist of one or more Transferable Accounts, depending on the asset type. For example, if an Option Designer creates a pool with USDC on Optimism and USDC on Arbitrum, the pool will have one Transferable Account because a single Ethereum-compatible account can manage multiple rollups like Optimism, Arbitrum, and Base. On the other hand, if the pool includes BTC on Bitcoin and USDC on Optimism, it will require two Transferable Accounts to collect liquidity, as Bitcoin and Ethereum use different address types.</p>
@@ -107,7 +107,7 @@
 <li><p>The Solver and Liquidity Provider receive fees from the pool according to the conditions.</p>
 </li>
 </ol>
-<p><img src="https://hackmd.io/_uploads/rySIB8oqC.png" alt="example-bop" class="responsive-img"></p>
+<p><img src="https://hackmd.io/_uploads/rySIB8oqC.png" alt="example-bop"></p>
 <h2>Fees</h2>
 <p>Option Designers can create Binary Options Pools with flexible conditions. Here are two examples.</p>
 <ol>
@@ -143,7 +143,7 @@
 </tr>
 </tbody></table>
 <p>Solvers can fulfill intents with BTC or USDC in the pool without holding stock. Liquidity Providers can earn fees per 28-day period.</p>
-<p><img src="https://hackmd.io/_uploads/HJy5Rvi5A.png" alt="example-of-amm-type-pool" class="responsive-img"></p>
+<p><img src="https://hackmd.io/_uploads/HJy5Rvi5A.png" alt="example-of-amm-type-pool"></p>
 </li>
 <li><p><strong>One-side Liquidity</strong></p>
 <p>Another simple use case is one-side liquidity, similar to a maker’s order in a CLOB.</p>
@@ -181,7 +181,7 @@
 </tr>
 </tbody></table>
 <p>Solvers can use this pool to fulfill intents involving USDT on Optimism and USDT on Solana. Liquidity Providers can offer liquidity with USDT on Solana and earn fees in USDT on Optimism. One-side liquidity is suitable for wrapped tokens, stablecoins, and tokens with the same utility across multiple chains.</p>
-<p><img src="https://hackmd.io/_uploads/SJp5RPicC.png" alt="example-of-one-side-liquidity" class="responsive-img"></p>
+<p><img src="https://hackmd.io/_uploads/SJp5RPicC.png" alt="example-of-one-side-liquidity"></p>
 </li>
 </ol>
 <h2>Considerations</h2>
