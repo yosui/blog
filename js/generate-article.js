@@ -101,10 +101,8 @@ function updateIndexFile(articleListItems) {
 <body>
     <header>
         <div class="container">
-            <h1>Yosui Blog</h1>
+            <h1><a href="../">Yosui Blog</a></h1>
             <nav>
-                <a href="#">Economics</a>
-                <a href="#">Crypto</a>
             </nav>
         </div>
     </header>
