@@ -1,3 +1,3 @@
 ```
-node js/generate-artcile.js
+node js/generate-article.js
 ```
