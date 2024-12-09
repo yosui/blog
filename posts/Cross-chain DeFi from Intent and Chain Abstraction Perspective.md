@@ -22,6 +22,8 @@ In this article, we categorize Cross-chain DeFi products into three types: Appli
 
 **Protocol Layer:** Messaging, relayers, and infrastructure. They improve the cross-chain experience through abstracted approaches. However, these solutions often require time to design and verify, meaning crypto users may have to wait six months or more to experience new approaches.
 
+
+
 ![cross-chain-defi-framework](https://hackmd.io/_uploads/BkYHdnNiA.png)
 
 
