@@ -1,5 +1,6 @@
+# Project Development Framework
 
-- Build Strong Team
+## Build Strong Team
   - Fundraising Ability
     - Positioning
     - Vision
@@ -24,7 +25,7 @@
     - Portfolio Management
 
 
-- Edge Discovery Reproducibility
+## Edge Discovery Reproducibility
   - Research Capability
     - Ability to Read Research Papers
     - Ability to Write Research Papers
